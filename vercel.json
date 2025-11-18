@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "rootDirectory": "elevated_backend",
+  "rootDirectory": "",
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs18.x"

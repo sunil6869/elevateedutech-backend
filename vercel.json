@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "rootDirectory": "",
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" }
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
